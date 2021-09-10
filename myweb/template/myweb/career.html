@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Career</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href={% static "css/style.css" %}>
+        <link rel="stylesheet" type="text/css" href={% static "css/career.css" %}>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm  ">
+            <a class="navbar-brand" id="logo" href="#">John Adetola</a>      
+            <ul class="navbar-nav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collNavbar">
+            <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
+            <li class="nav-item dropdown disabled">
+                <a class="nav-link dropdown-toggle" href="about" id="navbardrop">About</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item text-left" href="education">Education</a>
+                <a class="dropdown-item text-left" href="career">Career</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact-us">Contact Us</a></li></div> </ul>
+            <div >
+                <a href="https://www.twitter.com/johnadetola96"  class="fa fa-twitter border rounded-circle"></a>
+                <a href="https://www.linkedin.com/in/john-adegbite-286ab515a"  class="fa fa-linkedin border rounded-circle"></a>
+                <a href="https://www.instagram.com/johnadetola"  class="fa fa-instagram border rounded-circle"></a>
+                <a href="https://www.facebook.com/johnadetola"  class="fa fa-facebook-square border rounded-circle" ></a>
+                <a href="" data-keyboard="true" data-target="#myModal" data-toggle="modal" class="fa fa-envelope border rounded-circle"></a>
+                <a href="https://wa.me/+2347061038442"  class="fa fa-whatsapp border rounded-circle"></a>
+            </div>
+        </nav>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol> 
+            <div class="carousel-inner"  >
+                <div class="item active">
+                    <div class="d-flex justify-content-center">
+                    <img src={% static "images/education.jpg" %} alt="education" style="height: 500px; " >
+                    <div class="carousel-caption">
+                        <p id="captiontag">Knowledge acquired is unquantifiable</p>
+                    </div></div>
+                </div>
+                <div class="item ">
+                    <div class="d-flex justify-content-center">
+                    <img src={% static "images/John.jpg" %} alt="education" style="height: 500px;" >
+                    <div class="carousel-caption">
+                        <p id="captiontag">Knowledge acquired is unquantifiable</p>
+                    </div></div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next" >
+                <span class="glyphicon glyphicon-chevron-right" ></span>
+                <span class="sr-only">Next</span>
+            </a>
+            </div></div>
+        <div>
+            <p id="title">Experience</p>
+        </div>
+        <div id="row1">
+            <div id="side1">
+                <img src={% static "images/John.jpg" %} class="rounded" alt="Royal" id="Royalpic" >
+            </div>
+            <div id="main1">
+            <p id="Royal1">Toptech Engineering Limited</p>
+            <p id="Royal2">Internship</p>
+            <p id="Royal3"><strong>Gbagada, Lagos state</strong></p>
+            <p id="Royal4">While studying at Obafemi Awolowo University, internship programme is done at Toptech 
+                Engineering Limited where various electrical and power solutions are offered. <br/><br/>
+                The vast experiences gained from the installation of inverter, repair of power boards of UPS, 
+                maintenance of UPS and AVR and a support engineer at various organization like Fidelity bank, NAOC.
+                <br/><br/>
+                Panel construction is also an added experience acquired in the company, with construction of Phase
+                Sequence Correction Panel, battery circuit breaker, bus-bar panel, distribution panel etc. 
+            </p>
+            </div>
+        </div>
+        <div id="row1">
+            <div id="side1">
+                <img src={% static "images/John.jpg" %} class="rounded" alt="Royal" id="Royalpic" >
+            </div>
+            <div id="main1">
+            <p id="Royal1">Peecee Electronics Company</p>
+            <p id="Royal2">Internship</p>
+            <p id="Royal3"><strong>Osogbo, Osun state</strong></p>
+            <p id="Royal4">While studying at Federal Polytechnic Ede, internship programme is done at Peecee Electronics
+                Company where mechanical and electronics design and constructed are done. <br/><br/>
+                My experience ranges from familiarity with electronics components and various usuage to simple electronics
+                 designs and construction like power supply, monostable timer, astable timer, to designing of traffic 
+                light. Printed Circuit Board production with its Proteus design or PCB Express to its etching process
+                experience gained<br/><br/>
+                With Mechanical construction also done in the company for the casing of the electronics constructed, that
+                is also learnt to make the electronics beautiful to behold.
+            </p>
+            </div>
+        </div>
+        <div id="mySystem">
+            <p id="mySystem1">--------- My system ----------</p>
+            <p>LEARN EVERYDAY</p>
+            <P>PURSUE PASSION</P>
+            <p>BE LOVEABLE, SYSTEMATIC AND RELENTLESS</p>
+            <p>BELIEVE IN CHANGE</p>
+            <p>PRIORITIZE THE CUSTOMER</p>
+            <p>TEAMWORK</p>
+            <p>PROBLEM SOLVER</p>
+            <p>INVEST IN IDEAS THAT MATTER</p>
+            <div id="mySystem2">
+            <a class="rectangle" id="mySystem5" href="https://www.linkedin.com/in/john-adegbite-286ab515a">DIVE DEEPER INTO MY BRAIN</a>
+            </div>
+        </div>
+        <div class="container-fluid" id="footer">
+            <p id="footnote">© 2020 John Adetola </p>
+        </div>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Send an email</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                <div class="valid-feedback">Valid</div>
+                                <div class="invalid-feedback">Please fill out this field</div>
+                            </div>
+                            <div class="form-group mb-0">
+                                <label for="text">Comment:</label>
+                                <input type="text" class="form-control" id="text" placeholder="Enter the theme of your message" required>
+                                <div class="valid-feedback">Valid</div>
+                                <div class="invalid-feedback">Please fill out this field</div>
+                            </div>
+                            <div class="form-group mt-0">
+                                <textarea rows="5" class="form-control" id="message" placeholder="Enter your message here" required></textarea>
+                                <div class="valid-feedback">Valid</div> 
+                                <div class="invalid-feedback">Please fill out this field</div> 
+                            </div>
+                            <button type="submit" class="btn">Submit</button>    
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            document.getElementById("logo").style.pointerEvents = "none";
+            
+            (function(){
+                'use strict';
+                window.addEventListener('load', function(){
+                    var forms = document.getElementsByClassName('needs-validation');
+                    var validation = Array.prototype.filter.call(forms, function(form){
+                        form.addEventListener('submit', function(event){
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                },false);
+            })();
+        </script>
+    </body>
+
+</html>
