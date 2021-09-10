@@ -1,0 +1,61 @@
+#contact{
+    color: green;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#title{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+#contact1{
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+#contact2{
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+body{
+    background-color: grey;
+}
+#side1{
+    padding: 30px;
+    flex: 10%;
+    margin-bottom: 30px;
+}
+#side1 a{
+    margin-bottom: 30px;
+}
+#side2{
+    padding: 30px;
+    flex: 10%;
+}
+#icon,#icon:hover, .icon:hover{
+    font-size: 25px;
+    text-decoration:none ;
+    background-color: none;
+}
+#side1:hover{
+    background-color: none;
+}
+#footer{
+    background-color: whitesmoke;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#footnote{
+    color:grey;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: small;
+}
+#row{
+    display: flex;
+    
+}

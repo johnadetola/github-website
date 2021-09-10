@@ -1,0 +1,128 @@
+
+body{
+    
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown {
+    float: left;
+    overflow:visible;
+}
+
+.dropdown-menu a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+    
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position:absolute;
+    background-color: black;
+    min-width:auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+
+}
+
+.dropdown-menu a {
+    float: none;
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+    text-align: left;
+} 
+
+.navbar{
+    overflow: visible;
+    background-color: black;
+    
+} 
+
+.navbar-nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+} 
+
+.navbar a {
+    color:white;
+}
+
+.navbar-nav a:hover, .dropdown:hover .nav-link {
+    background-color: red;
+    
+} 
+
+.dropdown .nav-link {
+    font-size: 14px;
+    border: none;
+    outline:none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.fa{
+    font-size: 15px;
+    padding: 8px;
+    background-color:transparent;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.fa:hover{
+    background-color: violet;
+    text-decoration: none;
+}
+
+.fa-whatsapp:hover{
+    background-color: green;
+}
+
+.fa-facebook-square:hover{
+    background-color: blue;
+}
+
+.fa-twitter:hover{
+    background-color: rgb(29, 161, 242);
+}
+
+.fa-instagram:hover{
+    background-color: rgb(193, 53, 132);
+}
+
+.fa-linkedin:hover{
+    background-color: rgb(0, 119, 181);
+}
+
+.fa-envelope:hover{
+    background-color: rgb(234, 67, 53);
+}
+
+.navbar-brand:hover{
+    color: tomato;
+}
+

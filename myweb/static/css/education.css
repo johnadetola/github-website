@@ -1,0 +1,126 @@
+
+#main1{
+    flex: 80%;
+    padding-left: 50px;
+    text-align: justify; 
+}
+#side1{
+    flex: 20%;
+}
+
+#row1{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 30px;
+    /*flex-direction: row; */
+}
+
+#Royalpic{
+    width: 300px; /* max 380px */
+    height: 200px;
+    margin-top: 10px; 
+    
+} 
+
+body{
+    background-color:white ;
+    
+}
+
+
+#Royal2{
+    color: green;
+    font-size: 20px;
+    padding-right: 10px;
+    margin: 0px;
+}
+#Royal1{
+    color: blue;
+    font-size: 25px;
+    padding-right: 10px;
+    margin-bottom: 4px;
+}
+#Royal3{
+    color: black;
+    font-size: 18px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+}
+#Royal4{
+    color:grey;
+    font-size: 17px; 
+    font-family:serif;    
+}
+#footer{
+    background-color: whitesmoke;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#footnote{
+    color:grey;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: small;
+}
+.carousel-inner{
+    background-color: grey;
+}
+#title{
+    font-weight:normal;
+    font-size: 40px;
+    margin-left: 15%;
+    text-decoration: underline;
+    padding-top: 30px;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+#captiontag{
+    font-size: large;
+    font-weight: lighter;
+}
+.carousel-indicators li {
+      position:static;
+      /**flex: 0 1 auto; */
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      /**cursor: pointer; */
+      background-color:black;
+      border: none;
+  }
+
+@media only screen and (max-width:900px){
+    #row1{
+        flex-wrap: wrap;
+        flex-grow: column;
+    }
+    #side1{
+        padding: 20px;
+    }
+    #main1{
+        width: 100%;
+    }
+}
+  /*#row1{
+    /* flex-grow: column; 
+     padding: 0px;
+     flex-direction: column;
+     margin-left: 0%;
+     /*flex-direction: column; 
+ }
+ #main1{
+    /* margin-left: 0%; 
+     width: 100%;
+     padding: 20px;
+ } 
+ #side1{
+     padding: 20px;
+    /* margin-left: 4px;
+     flex: 100%; 
+ }
+ #title{
+     margin-left: 50%;
+ } */

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact-Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href={% static "css/style.css" %}>
+        <link rel="stylesheet" type="text/css" href={% static "css/contactus.css" %}> 
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm  ">
+            <a class="navbar-brand" style="background-color: yellowgreen;color: khaki;font-family:Cambria;font-size:larger;" id="logo" href="#">John Adetola</a>      
+            <ul class="navbar-nav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collNavbar">
+            <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
+            <li class="nav-item dropdown disabled">
+                <a class="nav-link dropdown-toggle" href="about" id="navbardrop">About</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item text-left" href="education">Education</a>
+                <a class="dropdown-item text-left" href="career">Career</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact-us">Contact Us</a></li></div> </ul>
+            <div >
+            <a href="https://www.twitter.com/johnadetola96"  class="fa fa-twitter border rounded-circle"></a>
+            <a href="https://www.linkedin.com/in/john-adegbite-286ab515a"  class="fa fa-linkedin border rounded-circle"></a>
+            <a href="https://www.instagram.com/johnadetola"  class="fa fa-instagram border rounded-circle"></a>
+            <a href="https://www.facebook.com/johnadetola"  class="fa fa-facebook-square border rounded-circle" ></a>
+            <a href="" data-keyboard="true" data-target="#myModal" data-toggle="modal" class="fa fa-envelope border rounded-circle"></a>
+            <a href="https://wa.me/+2347061038442"  class="fa fa-whatsapp border rounded-circle"></a>
+            </div>
+        </nav>
+        
+        <div id="contact">
+        <p id="title">Contact</p>
+        <p id="contact1">"If I had asked people what they wanted, they would have said
+            faster horses."
+        </p>
+        <p id="contact2">- Henry Ford</p><br/>
+        <div id="row" class="container">
+            <div id="side1">
+                <a href="https://wa.me/+2347061038442" id="icon"  class="fa fa-whatsapp icon">Whatsapp</a>
+                <a href="https://www.twitter.com/johnadetola96"  class="fa fa-twitter  ">twitter</a>
+            </div>
+            <div id="side2">
+                <a href="https://www.linkedin.com/in/john-adegbite-286ab515a"  class="fa fa-linkedin ">LinkedIn</a>
+                <a href="" data-keyboard="true" data-target="#myModal" data-toggle="modal" class="fa fa-envelope ">Send me an email</a>
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid" id="footer">
+            <p id="footnote">© 2020 John Adetola </p>
+        </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Send an email</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                <div class="valid-feedback">Valid</div>
+                                <div class="invalid-feedback">Please fill out this field</div>
+                            </div>
+                            <div class="form-group mb-0">
+                                <label for="text">Comment:</label>
+                                <input type="text" class="form-control" id="text" placeholder="Enter the theme of your message" required>
+                                <div class="valid-feedback">Valid</div>
+                                <div class="invalid-feedback">Please fill out this field</div>
+                            </div>
+                            <div class="form-group mt-0">
+                                <textarea rows="5" class="form-control" id="message" placeholder="Enter your message here" required></textarea>
+                                <div class="valid-feedback">Valid</div> 
+                                <div class="invalid-feedback">Please fill out this field</div> 
+                            </div>
+                            <button type="submit" class="btn">Submit</button>    
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <script>
+            document.getElementById("logo").style.pointerEvents = "none";
+            
+            (function(){
+                'use strict';
+                window.addEventListener('load', function(){
+                    var forms = document.getElementsByClassName('needs-validation');
+                    var validation = Array.prototype.filter.call(forms, function(form){
+                        form.addEventListener('submit', function(event){
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                },false);
+            })();
+        </script>
+    </body>
+
+</html>
